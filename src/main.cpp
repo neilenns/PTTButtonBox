@@ -9,7 +9,7 @@
 
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_JOYSTICK, 1, 0, false, false, false, false, false, false, false, false, false, false, false);
 
-constexpr uint8_t pttButtonPin = 14;
+constexpr uint8_t pttButtonPin = 10;
 
 void setup()
 {
@@ -35,5 +35,5 @@ void loop()
     lastButtonState = currentButtonState;
   }
 
-  delay(200);
+  delay(100);
 }
